@@ -36,6 +36,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 endif
 
+#Opts
+STRICT_ALIASING := true
+GRAPHITE_OPTS := true
+CLANG_O3 := true
+ENABLE_GCCONLY := true
+
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/moto/shamu
 TARGET_KERNEL_CONFIG := shamu_defconfig
