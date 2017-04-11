@@ -36,7 +36,6 @@ PRODUCT_MANUFACTURER := Google
 
 endif
 
-#Inline kernel
 TARGET_KERNEL_CONFIG := fuckery_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/pixel
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
@@ -44,6 +43,13 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_GCC_VERSION_ARM64 := 6.3
 TARGET_USES_UNCOMPRESSED_KERNEL := false
+
+#Opts
+STRICT_ALIASING := true
+GRAPHITE_OPTS := true
+POLLY_OPTS := true
+ENABLE_GCCONLY := true
+CLANG_O3 := true
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
