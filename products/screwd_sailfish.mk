@@ -31,7 +31,7 @@ $(call inherit-product, device/google/marlin/aosp_sailfish.mk)
 PRODUCT_NAME := screwd_sailfish
 PRODUCT_DEVICE := sailfish
 PRODUCT_BRAND := google
-PRODUCT_MODEL := Pixel
+PRODUCT_MODEL := Pissel mini
 PRODUCT_MANUFACTURER := Google
 
 endif

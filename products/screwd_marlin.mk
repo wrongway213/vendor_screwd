@@ -31,7 +31,7 @@ $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 PRODUCT_NAME := screwd_marlin
 PRODUCT_DEVICE := marlin
 PRODUCT_BRAND := google
-PRODUCT_MODEL := Pixel XL
+PRODUCT_MODEL := Pissel
 PRODUCT_MANUFACTURER := Google
 
 endif
