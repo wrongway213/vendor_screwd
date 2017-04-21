@@ -45,6 +45,14 @@ TARGET_GCC_VERSION_ARM64 := 6.3
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
 TARGET_KERNEL_CONFIG := angler_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-
+
+#Opts
+STRICT_ALIASING := true
+GRAPHITE_OPTS := true
+POLLY_OPTS := true
+ENABLE_GCCONLY := true
+CLANG_O3 := true
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
