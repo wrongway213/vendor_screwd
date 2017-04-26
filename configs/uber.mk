@@ -6,16 +6,6 @@ ifeq (Linux,$(UNAME))
   HOST_OS := linux
 endif
 
-ifeq (linux,$(HOST_OS))
-  AND_CLANG_VERSION := $(shell prebuilts/clang/host/$(HOST_PREBUILT_TAG)/$(LLVM_PREBUILTS_VERSION)/bin/clang --version | grep "clang " 2>&1)
-
-  space :=
-  space +=
-  AND_CLANG_VERSION := $(subst $(space),-,$(strip $(AND_CLANG_VERSION)))
-
-  ADDITIONAL_BUILD_PROPERTIES += \
-    ro.build.uber.clang=$(AND_CLANG_VERSION)
-
   ifeq (arm,$(TARGET_ARCH))
 
     # ANDROIDEABI TOOLCHAIN INFO
@@ -113,5 +103,4 @@ GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)
 ifneq (,$(GCC_OPTIMIZATION_LEVELS))
 ADDITIONAL_BUILD_PROPERTIES += \
       ro.uber.flags=$(GCC_OPTIMIZATION_LEVELS)
-  endif
 endif
