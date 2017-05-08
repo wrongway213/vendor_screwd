@@ -39,8 +39,9 @@ endif
 #Opts
 STRICT_ALIASING := true
 GRAPHITE_OPTS := true
-CLANG_O3 := true
-ENABLE_GCCONLY := true
+POLLY_OPTS := true
+LOCAL_CLANG := true
+LOCAL_CLANG_LTO := true
 
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/moto/shamu
