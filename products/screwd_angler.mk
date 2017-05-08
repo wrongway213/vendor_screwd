@@ -51,8 +51,8 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-
 STRICT_ALIASING := true
 GRAPHITE_OPTS := true
 POLLY_OPTS := true
-ENABLE_GCCONLY := true
-CLANG_O3 := true
+LOCAL_CLANG := true
+LOCAL_CLANG_LTO := true
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
