@@ -32,6 +32,13 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 endif
 
+#Opts
+STRICT_ALIASING := true
+GRAPHITE_OPTS := true
+POLLY_OPTS := true
+LOCAL_CLANG := true
+LOCAL_CLANG_LTO := true
+
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
