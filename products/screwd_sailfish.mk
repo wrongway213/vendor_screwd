@@ -54,5 +54,5 @@ LOCAL_CLANG_LTO := true
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=sailfish \
-    BUILD_FINGERPRINT=google/sailfish/sailfish:7.1.2/NHG47L/3888830:user/release-keys \
-    PRIVATE_BUILD_DESC="sailfish-user 7.1.2 NHG47L 3888830 release-keys"
+    BUILD_FINGERPRINT=google/sailfish/sailfish:7.1.2/NJH47B/4021576:user/release-keys \
+    PRIVATE_BUILD_DESC="sailfish-user 7.1.2 NJH47B 4021576 release-keys"
