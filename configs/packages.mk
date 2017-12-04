@@ -15,6 +15,10 @@
 PRODUCT_PACKAGES += \
     Stk
 
+#OmniSwitch
+PRODUCT_PACKAGES += \
+    OmniSwitch
+
 #AOSP Messenger
 PRODUCT_PACKAGES += \
     messaging
